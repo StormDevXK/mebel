@@ -4,159 +4,181 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/logo.png">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Avion</title>
 </head>
 <body>
-<header>
-    <img src="assets/icons/Search.png" alt="Лупа">
-    <h1>Avion</h1>
-    <img src="assets/icons/Shopping--cart.png" alt="Корзина">
-    <img src="assets/icons/User--avatar.png" alt="Профиль">
-    <nav>
-        <p>Plant pots</p>
-        <p>Ceramics</p>
-        <p>Tables</p>
-        <p>Chairs</p>
-        <p>Crockery</p>
-        <p>Tableware</p>
-        <p>Cutlery</p>
+<header class="header">
+    <div class="header__top-block">
+        <img src="assets/icons/Search.png" alt="Лупа" class="header__search-icon">
+        <h1 class="header__title">Avion</h1>
+        <img src="assets/icons/Shopping--cart.png" alt="Корзина" class="header__cart-icon">
+        <img src="assets/icons/User--avatar.png" alt="Профиль" class="header__profile-icon">
+    </div>
+
+    <hr class="header__divider" />
+
+    <nav class="header__nav">
+        <a class="header__nav-item" href="#">Plant pots</a>
+        <a class="header__nav-item" href="#">Ceramics</a>
+        <a class="header__nav-item" href="#">Tables</a>
+        <a class="header__nav-item" href="#">Chairs</a>
+        <a class="header__nav-item" href="#">Crockery</a>
+        <a class="header__nav-item" href="#">Tableware</a>
+        <a class="header__nav-item" href="#">Cutlery</a>
     </nav>
 </header>
-<main>
-    <section>
-        <div>
-            <h2>Сложно сказать, почему младая поросль матереет</h2>
-            <button>Посмотреть коллекцию</button>
-            <p>Предварительные выводы неутешительны: высокотехнологичная концепция общественного уклада влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации укрепления моральных ценностей.</p>
+
+<main class="main">
+    <section class="promo">
+        <div class="promo__container">
+            <h2 class="promo__title">The furniture brand for the future, with timeless designs</h2>
+            <button class="promo__button promo__button--hover">Посмотреть коллекцию</button>
+            <p class="promo__text">Предварительные выводы неутешительны: высокотехнологичная концепция общественного уклада влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации укрепления моральных ценностей.</p>
         </div>
-        <img src="assets/img/Right%20Image.png" alt="">
+        <img class="promo__img" src="assets/img/Right%20Image.png" alt="">
     </section>
-    <section>
-        <h2>Частокол на границе попахивает безумием</h2>
-        <div>
-            <img src="assets/icons/Delivery.png" alt="">
-            <h4>Сейчас всё чаще звучит шёпот бессменных лидеров!</h4>
-            <p>Учитывая ключевые сценарии поведения, высококачественный прототип будущего проекта предопределяет высокую востребованность кластеризации усилий.</p>
-        </div>
-        <div>
-            <img src="assets/icons/Checkmark--outline.png" alt="">
-            <h4>Сейчас всё чаще звучит шёпот бессменных лидеров!</h4>
-            <p>Учитывая ключевые сценарии поведения, высококачественный прототип будущего проекта предопределяет высокую востребованность кластеризации усилий.</p>
-        </div>
-        <div>
-            <img src="assets/icons/Purchase.png" alt="">
-            <h4>Сейчас всё чаще звучит шёпот бессменных лидеров!</h4>
-            <p>Учитывая ключевые сценарии поведения, высококачественный прототип будущего проекта предопределяет высокую востребованность кластеризации усилий.</p>
-        </div>
-        <div>
-            <img src="assets/icons/Sprout.png" alt="">
-            <h4>Сейчас всё чаще звучит шёпот бессменных лидеров!</h4>
-            <p>Учитывая ключевые сценарии поведения, высококачественный прототип будущего проекта предопределяет высокую востребованность кластеризации усилий.</p>
+    <section class="features">
+        <h2 class="features__title">What makes our brand different</h2>
+        <div class="features__container">
+            <div class="feature__block">
+                <img class="feature__img" src="assets/icons/Delivery.png" alt="">
+                <h4 class="feature__title">Сейчас всё чаще звучит шёпот бессменных лидеров!</h4>
+                <p>Учитывая ключевые сценарии поведения, высококачественный прототип будущего проекта предопределяет высокую востребованность кластеризации усилий.</p>
+            </div>
+            <div class="feature__block">
+                <img class="feature__img" src="assets/icons/Checkmark--outline.png" alt="">
+                <h4 class="feature__title">Сейчас всё чаще звучит шёпот бессменных лидеров!</h4>
+                <p>Учитывая ключевые сценарии поведения, высококачественный прототип будущего проекта предопределяет высокую востребованность кластеризации усилий.</p>
+            </div>
+            <div class="feature__block">
+                <img class="feature__img" src="assets/icons/Purchase.png" alt="">
+                <h4 class="feature__title">Сейчас всё чаще звучит шёпот бессменных лидеров!</h4>
+                <p>Учитывая ключевые сценарии поведения, высококачественный прототип будущего проекта предопределяет высокую востребованность кластеризации усилий.</p>
+            </div>
+            <div class="feature__block">
+                <img class="feature__img" src="assets/icons/Sprout.png" alt="">
+                <h4 class="feature__title">Сейчас всё чаще звучит шёпот бессменных лидеров!</h4>
+                <p>Учитывая ключевые сценарии поведения, высококачественный прототип будущего проекта предопределяет высокую востребованность кластеризации усилий.</p>
+            </div>
         </div>
     </section>
-    <section>
-        <h2>Может показаться странным, но&nbsp;небо темнеет</h2>
-        <div>
-            <img src="assets/img/Photo.png" alt="">
-            <h3>Стул</h3>
-            <p>250₽</p>
+    <section class="new-products">
+        <h2 class="new-products__title">New ceramics</h2>
+        <div class="new-products__container">
+            <div class="new-product">
+                <img class="new-product__img" src="assets/img/Photo.png" alt="">
+                <h3 class="new-product__title">Стул</h3>
+                <p class="new-product__cost">250₽</p>
+            </div>
+            <div class="new-product">
+                <img class="new-product__img" src="assets/img/Photo%20(1).png" alt="">
+                <h3 class="new-product__title">Ваза 1</h3>
+                <p class="new-product__cost">155₽</p>
+            </div>
+            <div class="new-product">
+                <img class="new-product__img" src="assets/img/Photo%20(1).png" alt="">
+                <h3 class="new-product__title">Ваза 2</h3>
+                <p class="new-product__cost">125₽</p>
+            </div>
+            <div class="new-product">
+                <img class="new-product__img" src="assets/img/Photo%20(2).png" alt="">
+                <h3 class="new-product__title">Лампа</h3>
+                <p class="new-product__cost">399₽</p>
+            </div>
         </div>
-        <div>
-            <img src="assets/img/Photo%20(1).png" alt="">
-            <h3>Ваза 1</h3>
-            <p>155₽</p>
-        </div>
-        <div>
-            <img src="assets/img/Photo%20(1).png" alt="">
-            <h3>Ваза 2</h3>
-            <p>125₽</p>
-        </div>
-        <div>
-            <img src="assets/img/Photo%20(2).png" alt="">
-            <h3>Лампа</h3>
-            <p>399₽</p>
-        </div>
-        <button>Посмотреть коллекцию</button>
+        <button class="new-products__button new-products__button--hover">Посмотреть коллекцию</button>
     </section>
-    <section>
-        <h2>Сейчас всё чаще звучит боевой клич героев</h2>
-        <div>
-            <img src="assets/img/Large.png" alt="">
-            <h3>Диван</h3>
-            <p>890₽</p>
+    <section class="popular">
+        <h2 class="popular__title">Our popular products</h2>
+        <div class="popular__container">
+            <div class="popular-block">
+                <img class="popular-block__img" src="assets/img/Large.png" alt="">
+                <h3 class="popular-block__title">Диван</h3>
+                <p class="popular-block__cost">890₽</p>
+            </div>
+            <div class="popular-block">
+                <img class="popular-block__img" src="assets/img/Photo.png" alt="">
+                <h3 class="popular-block__title">Стул</h3>
+                <p class="popular-block__cost">250₽</p>
+            </div>
+            <div class="popular-block">
+                <img class="popular-block__img" src="assets/img/Photo%20(3).png" alt="">
+                <h3 class="popular-block__title">Старый стул</h3>
+                <p class="popular-block__cost">250₽</p>
+            </div>
         </div>
-        <div>
-            <img src="assets/img/Photo.png" alt="">
-            <h3>Стул</h3>
-            <p>250₽</p>
-        </div>
-        <div>
-            <img src="assets/img/Photo%20(3).png" alt="">
-            <h3>Старый стул</h3>
-            <p>250₽</p>
-        </div>
-        <button>Посмотреть коллекцию</button>
+        <button class="popular__button popular__button--hover">Посмотреть коллекцию</button>
     </section>
-    <section>
-        <h2>Современная методология разработки ни к чему нас не обязывает</h2>
-        <p>А&nbsp;также независимые государства, превозмогая сложившуюся непростую экономическую ситуацию, в&nbsp;равной степени предоставлены сами себе!</p>
-        <form>
-            <input type="email" name="email" id="signUp1">
-            <input type="button" value="Sign up">
-        </form>
-    </section>
-    <section>
-        <div>
-            <h2>Выбранный нами инновационный путь продолжает удивлять</h2>
-            <p>Наше дело не&nbsp;так однозначно, как может показаться: постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по&nbsp;разработке кластеризации усилий.</p>
-            <p>Следует отметить, что убеждённость некоторых оппонентов способствует подготовке и реализации распределения внутренних резервов и ресурсов.</p>
-            <button>Получить</button>
-        </div>
-        <img src="assets/img/Image.png" alt="">
-    </section>
-</main>
-<footer>
-    <div>
-        <div>
-            <h2>Меню</h2>
-            <p>Пункт1</p>
-            <p>Пункт2</p>
-            <p>Пункт3</p>
-            <p>Пункт4</p>
-            <p>Пункт5</p>
-        </div>
-        <div>
-            <h2>Категории</h2>
-            <p>Пункт1</p>
-            <p>Пункт2</p>
-            <p>Пункт3</p>
-            <p>Пункт4</p>
-            <p>Пункт5</p>
-        </div>
-        <div>
-            <h2>Наша компания</h2>
-            <p>Пункт1</p>
-            <p>Пункт2</p>
-            <p>Пункт3</p>
-            <p>Пункт4</p>
-            <p>Пункт5</p>
-        </div>
-        <div>
-            <h2>Подписаться на рассылку</h2>
-            <form>
-                <input type="email" name="email" id="signUp2">
-                <input type="button" value="Sign up">
+    <section class="newsletter">
+        <div class="newsletter__container">
+            <h2 class="newsletter__title">Современная методология разработки ни к чему нас не обязывает</h2>
+            <p class="newsletter__text">А&nbsp;также независимые государства, превозмогая сложившуюся непростую экономическую ситуацию, в&nbsp;равной степени предоставлены сами себе!</p>
+            <form class="newsletter__form">
+                <input class="newsletter-form__input" type="email" placeholder="your@email.com" name="email" id="signUp1">
+                <input class="newsletter-form__button" type="button" value="Sign up">
             </form>
         </div>
-    </div>
-    <div>
-        <p>Copyright 2025 Avion LTD</p>
-        <div>
-            <img src="assets/icons/Logo--linkedin.png" alt="">
-            <img src="assets/icons/Logo--pinterest.png" alt="">
-            <img src="assets/icons/Logo--skype.png" alt="">
+    </section>
+    <section class="about">
+        <div class="about__container">
+            <h2 class="about__title">Выбранный нами инновационный путь продолжает удивлять</h2>
+            <p class="about__text">Наше дело не&nbsp;так однозначно, как может показаться: постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по&nbsp;разработке кластеризации усилий.</p>
+            <p class="about__text">Следует отметить, что убеждённость некоторых оппонентов способствует подготовке и реализации распределения внутренних резервов и ресурсов.</p>
+            <button class="about__button about__button--hover">Получить</button>
         </div>
+        <img class="about__img" src="assets/img/Image.png" alt="">
+    </section>
+</main>
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__column">
+      <h2 class="footer__title">Меню</h2>
+      <p class="footer__link">Пункт1</p>
+      <p class="footer__link">Пункт2</p>
+      <p class="footer__link">Пункт3</p>
+      <p class="footer__link">Пункт4</p>
+      <p class="footer__link">Пункт5</p>
     </div>
+
+    <div class="footer__column">
+      <h2 class="footer__title">Категории</h2>
+      <p class="footer__link">Пункт1</p>
+      <p class="footer__link">Пункт2</p>
+      <p class="footer__link">Пункт3</p>
+      <p class="footer__link">Пункт4</p>
+      <p class="footer__link">Пункт5</p>
+    </div>
+
+    <div class="footer__column">
+      <h2 class="footer__title">Наша компания</h2>
+      <p class="footer__link">Пункт1</p>
+      <p class="footer__link">Пункт2</p>
+      <p class="footer__link">Пункт3</p>
+      <p class="footer__link">Пункт4</p>
+      <p class="footer__link">Пункт5</p>
+    </div>
+
+    <div class="footer__column footer__column--subscribe">
+      <h2 class="footer__title">Подписаться на рассылку</h2>
+      <form class="footer__form">
+        <input class="footer__input" type="email" name="email" id="signUp2">
+        <input class="footer__button" type="button" value="Sign up">
+      </form>
+    </div>
+  </div>
+
+  <hr class="footer__divider">
+
+  <div class="footer__bottom">
+    <p class="footer__copyright">Copyright 2025 Avion LTD</p>
+    <div class="footer__socials">
+      <img class="footer__social-icon" src="assets/icons/Logo--linkedin.png" alt="">
+      <img class="footer__social-icon" src="assets/icons/Logo--pinterest.png" alt="">
+      <img class="footer__social-icon" src="assets/icons/Logo--skype.png" alt="">
+    </div>
+  </div>
 </footer>
+
 </body>
 </html>
