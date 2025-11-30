@@ -4,17 +4,24 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: #fff;
     font-family: 'Inter', sans-serif, system-ui;
+    font-weight: 300;
 }
 
 /*-----header-----*/
 
 .header {
-    margin: 25px 20px 40px;
+    /* margin: 25px 20px 40px; */
+    position:fixed;
+    background-color: #fff;
+    width: 100%;
+    top: 0;
+    padding: 0 20px;
 }
 
 .header__top-block {
@@ -61,6 +68,7 @@ body {
 /*-----main-----*/
 .main {
     /* margin: auto 80px; */
+    margin-top: 180px;
 }
 
 .promo {
@@ -69,6 +77,7 @@ body {
     background-color: #2a244b;
     color: white;
     display: flex;
+    scroll-margin-top: 180px;  
 }
 
 .promo__container {
@@ -104,6 +113,7 @@ body {
 /* main sections */
 .features, .new-products, .popular {
     margin: 100px 70px;
+    scroll-margin-top: 160px;
 }
 
 .features__title {
@@ -200,6 +210,7 @@ body {
 .newsletter {
     background-color: #f9f9f9;
     padding: 50px 70px 60px;
+    scroll-margin-top: 160px;
 }
 
 .newsletter__container {
@@ -235,7 +246,8 @@ body {
     height: 100%;
     border: none;
     background-color: #f9f9f9;
-    padding: 15px;
+    padding: 0 15px;
+    outline: none;
 }
 
 .newsletter-form__button {
@@ -244,10 +256,12 @@ body {
     border: none;
     background-color: #2a244b;
     color: #f4f4f4;
+    cursor: pointer;
 }
 
 .about {
     display: flex;
+    scroll-margin-top: 143px;
 }
 
 .about__container {
@@ -287,8 +301,79 @@ body {
 .footer {
     background-color: #2a244b;
     color: #fff;
+    padding: 50px 70px 0;
 }
 
 .footer__top {
+    display: grid;
+    grid-template-columns: repeat(3, 200px) auto;
+    margin-bottom: 20px;
+}
+
+.footer__title {
+    font-size: 1.1em;
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+.footer__link {
+    margin: 10px 0;
+    font-size: 0.9em;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer__link:visited {
+    color: inherit;
+}
+
+.footer__form {
     display: flex;
+    height: 60px;
+}
+
+.footer__input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: #494465;
+    color: #fff;
+    font-size: 1em;
+    outline: none;
+    padding: 0 30px;
+}
+
+.footer__input::placeholder {
+    color: #c8c8c8;
+}
+
+.footer__button {
+    border: none;
+    width: 160px;
+    background-color: #fff;
+    color: #2a254b;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.footer__divider {
+    border: none;
+    border-top: 1px solid #4e4c92;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.footer__socials {
+    display: flex;
+    gap: 20px;
+}
+
+.footer__social-icon {
+    width: 28px;
 }

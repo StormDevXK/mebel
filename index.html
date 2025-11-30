@@ -19,18 +19,17 @@
     <hr class="header__divider" />
 
     <nav class="header__nav">
-        <a class="header__nav-item" href="#">Plant pots</a>
-        <a class="header__nav-item" href="#">Ceramics</a>
-        <a class="header__nav-item" href="#">Tables</a>
-        <a class="header__nav-item" href="#">Chairs</a>
-        <a class="header__nav-item" href="#">Crockery</a>
-        <a class="header__nav-item" href="#">Tableware</a>
-        <a class="header__nav-item" href="#">Cutlery</a>
+        <a class="header__nav-item" href="#promo">Promo</a>
+        <a class="header__nav-item" href="#features">Features</a>
+        <a class="header__nav-item" href="#newProducts">New products</a>
+        <a class="header__nav-item" href="#popularProducts">Popular roducts</a>
+        <a class="header__nav-item" href="#newsletter">Newsletter</a>
+        <a class="header__nav-item" href="#about">About</a>
     </nav>
 </header>
 
 <main class="main">
-    <section class="promo">
+    <section class="promo" id="promo">
         <div class="promo__container">
             <h2 class="promo__title">The furniture brand for the future, with timeless designs</h2>
             <button class="promo__button promo__button--hover">Посмотреть коллекцию</button>
@@ -38,7 +37,7 @@
         </div>
         <img class="promo__img" src="assets/img/Right%20Image.png" alt="">
     </section>
-    <section class="features">
+    <section class="features" id="features">
         <h2 class="features__title">What makes our brand different</h2>
         <div class="features__container">
             <div class="feature__block">
@@ -63,7 +62,7 @@
             </div>
         </div>
     </section>
-    <section class="new-products">
+    <section class="new-products" id="newProducts">
         <h2 class="new-products__title">New ceramics</h2>
         <div class="new-products__container">
             <div class="new-product">
@@ -89,7 +88,7 @@
         </div>
         <button class="new-products__button new-products__button--hover">Посмотреть коллекцию</button>
     </section>
-    <section class="popular">
+    <section class="popular" id="popularProducts">
         <h2 class="popular__title">Our popular products</h2>
         <div class="popular__container">
             <div class="popular-block">
@@ -110,7 +109,7 @@
         </div>
         <button class="popular__button popular__button--hover">Посмотреть коллекцию</button>
     </section>
-    <section class="newsletter">
+    <section class="newsletter" id="newsletter">
         <div class="newsletter__container">
             <h2 class="newsletter__title">Современная методология разработки ни к чему нас не обязывает</h2>
             <p class="newsletter__text">А&nbsp;также независимые государства, превозмогая сложившуюся непростую экономическую ситуацию, в&nbsp;равной степени предоставлены сами себе!</p>
@@ -120,7 +119,7 @@
             </form>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="about__container">
             <h2 class="about__title">Выбранный нами инновационный путь продолжает удивлять</h2>
             <p class="about__text">Наше дело не&nbsp;так однозначно, как может показаться: постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по&nbsp;разработке кластеризации усилий.</p>
@@ -131,53 +130,51 @@
     </section>
 </main>
 <footer class="footer">
-  <div class="footer__top">
-    <div class="footer__column">
-      <h2 class="footer__title">Меню</h2>
-      <p class="footer__link">Пункт1</p>
-      <p class="footer__link">Пункт2</p>
-      <p class="footer__link">Пункт3</p>
-      <p class="footer__link">Пункт4</p>
-      <p class="footer__link">Пункт5</p>
+    <div class="footer__top">
+        <div class="footer__column">
+            <h2 class="footer__title">Меню</h2>
+            <a class="footer__link" href="#">Пункт1</a>
+            <a class="footer__link" href="#">Пункт2</a>
+            <a class="footer__link" href="#">Пункт3</a>
+            <a class="footer__link" href="#">Пункт4</a>
+            <a class="footer__link" href="#">Пункт5</a>
+        </div>
+        <div class="footer__column">
+            <h2 class="footer__title">Категории</h2>
+            <a class="footer__link" href="#">Пункт1</a>
+            <a class="footer__link" href="#">Пункт2</a>
+            <a class="footer__link" href="#">Пункт3</a>
+            <a class="footer__link" href="#">Пункт4</a>
+            <a class="footer__link" href="#">Пункт5</a>
+            <a class="footer__link" href="#">Пункт6</a>
+        </div>
+        <div class="footer__column">
+            <h2 class="footer__title">Наша компания</h2>
+            <a class="footer__link" href="#">Пункт1</a>
+            <a class="footer__link" href="#">Пункт2</a>
+            <a class="footer__link" href="#">Пункт3</a>
+            <a class="footer__link" href="#">Пункт4</a>
+            <a class="footer__link" href="#">Пункт5</a>
+        </div>
+        <div class="footer__column footer__column--subscribe">
+            <h2 class="footer__title">Подписаться на рассылку</h2>
+            <form class="footer__form">
+                <input class="footer__input" type="email" placeholder="your@email.com" name="email" id="signUp2">
+                <input class="footer__button" type="button" value="Sign up">
+            </form>
+        </div>
     </div>
-
-    <div class="footer__column">
-      <h2 class="footer__title">Категории</h2>
-      <p class="footer__link">Пункт1</p>
-      <p class="footer__link">Пункт2</p>
-      <p class="footer__link">Пункт3</p>
-      <p class="footer__link">Пункт4</p>
-      <p class="footer__link">Пункт5</p>
+    <hr class="footer__divider">
+    <div class="footer__bottom">
+        <p class="footer__copyright">Copyright 2025 Avion LTD</p>
+        <div class="footer__socials">
+        <img class="footer__social-icon" src="assets/icons/icons8-linkedin-48.png" alt="">
+        <img class="footer__social-icon" src="assets/icons/icons8-facebook-48.png" alt="">
+        <img class="footer__social-icon" src="assets/icons/icons8-instagram-48.png" alt="">
+        <img class="footer__social-icon" src="assets/icons/icons8-pinterest-48.png" alt="">
+        <img class="footer__social-icon" src="assets/icons/icons8-x-50.png" alt="">
+        </div>
     </div>
-
-    <div class="footer__column">
-      <h2 class="footer__title">Наша компания</h2>
-      <p class="footer__link">Пункт1</p>
-      <p class="footer__link">Пункт2</p>
-      <p class="footer__link">Пункт3</p>
-      <p class="footer__link">Пункт4</p>
-      <p class="footer__link">Пункт5</p>
-    </div>
-
-    <div class="footer__column footer__column--subscribe">
-      <h2 class="footer__title">Подписаться на рассылку</h2>
-      <form class="footer__form">
-        <input class="footer__input" type="email" name="email" id="signUp2">
-        <input class="footer__button" type="button" value="Sign up">
-      </form>
-    </div>
-  </div>
-
-  <hr class="footer__divider">
-
-  <div class="footer__bottom">
-    <p class="footer__copyright">Copyright 2025 Avion LTD</p>
-    <div class="footer__socials">
-      <img class="footer__social-icon" src="assets/icons/Logo--linkedin.png" alt="">
-      <img class="footer__social-icon" src="assets/icons/Logo--pinterest.png" alt="">
-      <img class="footer__social-icon" src="assets/icons/Logo--skype.png" alt="">
-    </div>
-  </div>
 </footer>
 
 </body>
