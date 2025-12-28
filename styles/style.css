@@ -343,6 +343,37 @@ body {
     background-color: #efefef;
 }
 
+/*-----gallery (masonry)-----*/
+
+.gallery {
+    margin: 100px 70px;
+    scroll-margin-top: 160px;
+}
+
+.gallery__title {
+    font-weight: 300;
+    font-size: 2em;
+    margin: 40px 0;
+}
+
+.gallery__container {
+    column-count: 4; 
+    column-gap: 20px; 
+}
+
+.gallery__img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery__img:hover {
+    transform: scale(1.02);
+}
+
 /*-----footer-----*/
 
 .footer {
@@ -442,7 +473,7 @@ body {
         order: -1; 
     }
 
-    .features, .new-products, .popular {
+    .features, .new-products, .popular, .gallery {
         margin: 60px 20px;
     }
     
@@ -470,9 +501,17 @@ body {
         max-height: 500px;
         order: 1;
     }
+    
+    .gallery__container {
+        column-count: 3;
+    }
 }
 
 @media (max-width: 768px) {
+    .promo, .features, .new-products, .popular, .newsletter, .about, .gallery {
+        scroll-margin-top: 10px;
+    }
+
     .header {
         position: static; 
         box-shadow: none;
@@ -502,6 +541,10 @@ body {
     
     .popular-block--wide {
         grid-column: auto; 
+    }
+
+    .gallery__container {
+        column-count: 2;
     }
     
     .footer__top {
@@ -543,6 +586,10 @@ body {
     .newsletter-form__button, .newsletter-form__input {
         width: 100%;
         height: 50px;
+    }
+
+    .gallery__container {
+        column-count: 1;
     }
 
     .footer__bottom {
