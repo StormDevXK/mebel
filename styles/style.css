@@ -64,7 +64,7 @@ body {
     margin: 10px 20px;
     color: #7e7a97;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: 0.3s;
 }
 
 .header__nav-item:hover {
@@ -285,7 +285,7 @@ body {
     background-color: #2a244b;
     color: #f4f4f4;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: 0.3s;
 }
 
 /*-----about-----*/
@@ -371,7 +371,7 @@ body {
     text-decoration: none;
     color: #fff;
     opacity: 0.8;
-    transition: opacity 0.3s;
+    transition: 0.3s;
 }
 
 .footer__link:hover {
